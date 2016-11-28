@@ -1,0 +1,16 @@
+<p id="notice"><%= notice %></p>
+
+<div class="row">
+  <div class="col-md-6">
+  <div class="thumbnail">
+   <%= image_tag @listing.image.url %>
+   </div>
+  </div>
+  <div class="col-md-6">
+ <font color="white">  <h3><b><%= @listing.name %></b> </h3> </font>
+  <font color="white"> <p><font size="6"><%= @listing.description %> </font></p> </font>
+
+</div> 
+</div>
+
+<p> <%= link_to 'Back',listings_path, class:"btn btn-link" %> </p>
